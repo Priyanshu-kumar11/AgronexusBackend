@@ -1,7 +1,12 @@
 services:
   - type: web
-    name: agro-nexus-api
+    name: agropredict-backend
     env: python
-    buildCommand: ""
-    startCommand: python server.py
+    buildCommand: pip install -r requirements.txt
+    startCommand: python sever.py
+    runtime: python
+    pythonVersion: 3.10.12
+    region: singapore
     plan: free
+    branch: main
+    repo: https://github.com/yourusername/yourrepo
