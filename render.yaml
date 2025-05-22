@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: agro-nexus-api
+    env: python
+    buildCommand: ""
+    startCommand: python server.py
+    plan: free
