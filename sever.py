@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)
 
 # --- First Model (Crop Prediction) ---
-crop_data = pd.read_csv('C:/users/asus/Downloads/Crop_recommendation.csv')
+crop_data = pd.read_csv('Crop_recommendation.csv')  # <-- updated path
 X_crop = crop_data[['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall']]
 label_encoder = LabelEncoder()
 y_crop = label_encoder.fit_transform(crop_data['label'])
