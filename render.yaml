@@ -2,11 +2,11 @@ services:
   - type: web
     name: agropredict-backend
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install --only-binary=:all: -r requirements.txt
     startCommand: python sever.py
     runtime: python
     pythonVersion: 3.10.12
-    region: singapore
+    region: Singapore (Southeast Asia)
     plan: free
     branch: main
     repo: https://github.com/yourusername/yourrepo
